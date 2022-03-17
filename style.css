@@ -1,0 +1,120 @@
+
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+.container-main{
+    display: block;
+    height: 100%;
+}
+.header{
+    height: 120px;
+    display: flex;
+    border: 1px solid #000000;
+}
+.logo{
+    flex:1;
+    height: 60px;
+}
+.background-img{
+    position: relative;
+    height: calc(100% - 120px);
+    text-align: center;
+}
+.main-text{
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container-area{
+    display: flex;
+    padding-top:20%;
+    position: relative;
+    border:1px solid black;
+}
+.area{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border:1px solid black;
+}
+.sub-area{
+    flex:1;
+    border:1px solid black;
+    margin: 0;
+    top: 50%;
+}
+.area-btn{
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container-activity{
+    align-items: center;
+    text-align: center;
+}
+.activity{
+    align-items: center;
+    height: 300px;
+    border: 1px solid black;
+}
+.news{
+    display: flex;
+    height: 300px;
+    border: 1px solid black;
+}
+.sub-news{
+    flex:1;
+    margin: 20px;
+    border: 1px solid black;
+}
+.container-partner{
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+}
+.partner-box{
+    display: flex;
+    height: 200px;
+    padding-top: 50px;
+}
+.sub-partner{
+    flex:1;
+    border: 1px solid black;
+    height: 100%;
+}
+.container-apps{
+    height: 350px;
+    border: 1px solid black;
+}
+.box-apps{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.sub-app{
+    flex: 1;
+    border: 1px solid black;
+}
+.container-contact{
+    height: 400px;
+    border: 1px solid black;
+    text-align: center;
+}
+.box-contact{
+    display: flex;
+    height: 300px;
+}
+.sub-contact{
+    flex: 1;
+    border: 1px solid black;
+}
