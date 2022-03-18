@@ -11,7 +11,7 @@ function typeWriter(){
     typeText();
     setTimeout(deleteText,3000);
     j++;
-    if(j == txt.length-1){
+    if(j == txt.length){
         j = 0;
     }
     setTimeout(typeWriter,timeout);

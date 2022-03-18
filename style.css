@@ -152,6 +152,7 @@ h1{
     text-shadow: 2px 2px 8px black;
 }
 .sub-area:hover .area-green{
+    background-color: rgba(231, 231, 21, 0.733);
     height: 100%;
     top: 50%;
 }
@@ -190,12 +191,40 @@ h1{
 .news{
     display: flex;
     height: 300px;
-    border: 1px solid black;
 }
 .sub-news{
+    position: relative;
     flex:1;
     margin: 20px;
-    border: 1px solid black;
+    overflow: hidden;
+}
+.sub-news img{
+    height: 100%;
+    position: relative;
+    filter: brightness(100%);
+}
+.whitecard{
+    background-color: #ffffff;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+.newstitle{
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 600;
+    font-size: 24px;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: left;
+    padding: 0 5% 0 5%;
+}
+.newsauthor{
+    position:absolute;
 }
 .container-partner{
     height: 400px;
