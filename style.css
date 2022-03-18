@@ -3,69 +3,189 @@ html, body{
     height: 100%;
     margin: 0px;
 }
+h1{
+    font-family: 'Inter', sans-serif;
+}
+.kjmlogo{
+    position: relative;
+    height: 100%;
+}
 .container-main{
     display: block;
     height: 100%;
 }
 .header{
+    top:0;
+    width: 100%;
+    position: absolute;
     height: 120px;
     display: flex;
-    border: 1px solid #000000;
+    justify-content: center;
 }
 .logo{
+    position: relative;
     flex:1;
-    height: 60px;
+    padding: 20px 20px 20px 50px;
+}
+.kjmtext{
+    margin: 0;
+    position: absolute;
+    padding:0px 5px 0px 10px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.kjmtext,.nav-link{
+    color:white;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.nav-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav{
+    padding-right: 50px;
+}
+.nav-link{
+    padding:0px 15px 0px 15px;
 }
 .background-img{
     position: relative;
-    height: calc(100% - 120px);
+    height: 100%;
+    width: 100%;
     text-align: center;
+    object-fit: cover;
+    filter: brightness(40%);
+    display: grid;
 }
 .main-text{
-    position: relative;
-    margin: 0;
+    position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    margin: auto;
 }
 .container-area{
     display: flex;
     padding-top:20%;
     position: relative;
-    border:1px solid black;
 }
 .area{
+    
     display: flex;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    border:1px solid black;
 }
 .sub-area{
-    flex:1;
-    border:1px solid black;
-    margin: 0;
-    top: 50%;
-}
-.area-btn{
+    background-color: black;
+    flex: 1;
     position: relative;
-    margin: 0;
+}
+.sub-area img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.darken{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgb(0,0,0));
+    position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.area-green{
+    background-color: #61CE70;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+.area-btn{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.test-area{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+.area-code{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    text-shadow: 2px 2px 8px black;
+}
+.sub-area:hover .area-green{
+    height: 100%;
+    top: 50%;
+}
+.sub-area:hover .area-btn{
+    top: 50%;
+}
 .container-activity{
+    position: relative;
+    margin:0;
     align-items: center;
     text-align: center;
+
+    background-color: rgb(15, 15, 15);
+}
+.container-activity img{
+    position: relative;
+    height: 620px;
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+.act-news{
+    height: 600px;
+    top:0;
+    width: 100%;
+    position: absolute;
 }
 .activity{
     align-items: center;
     height: 300px;
-    border: 1px solid black;
+}
+.activity h1{
+    color: rgb(255, 255, 255);
 }
 .news{
     display: flex;
@@ -93,13 +213,11 @@ html, body{
     height: 100%;
 }
 .container-apps{
-    height: 350px;
     border: 1px solid black;
 }
 .box-apps{
     height: 300px;
     display: flex;
-    flex-direction: row;
 }
 .sub-app{
     flex: 1;
