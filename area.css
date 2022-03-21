@@ -1,0 +1,132 @@
+* {
+box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 0);
+}
+/* Header/Blog Title */
+.header{
+    background-color: white;
+}
+.background-img{
+    background-image: url("./n4.jpg");
+}
+.kjmtext, .nav-link{
+    color:black;
+}
+.area-map-box{
+    margin: 20px 150px 20px 150px;
+    display: flex;
+}
+.card{
+    position: relative;
+    height: 250px;
+    flex:1;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(173, 173, 173);
+}
+.card-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.area-card p{
+    font-weight: 300;
+    padding:0px 20px 0px 20px;
+}
+.area-map{
+    flex:1;
+    background-color: grey;
+    margin: 20px;
+    display: flex;
+}
+.area-map iframe{
+    align-items: center;
+    justify-content: center; 
+}
+.area-card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+.container-news{
+    position: relative;
+}
+.container-news h1{
+    margin: 20px;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+.container-category{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.darken{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.category-green{
+    background-color: #61ce70;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.sub-category{
+    margin: 10px;
+    overflow: hidden;
+    background-color: black;
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+.sub-category img{
+    object-fit: cover;
+    max-width: 100%;
+}
+.category-btn{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.sub-category:hover .category-green{
+    opacity: 0.4;
+}
+.sub-category:hover .category-btn{
+    top: 50%;
+}
