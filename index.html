@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>test git</title>
+    <title>Kejiranan Mesra</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
+    <script src="scrollgallery.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Inter:wght@300;400;500;600;900&family=Secular+One&display=swap" rel="stylesheet">
   </head>
-  <body onload="typeWriter();">
+  <body onload="typeWriter(); iconScroll();">
     <div class="container-main">
-      <img class="background-img" src="./sample-bg.jpg">
+      <!--<img class="background-img" src="./sample-bg.jpg">-->
+      <div class="background-img"></div>
       <div class="header">
         <div class="logo">
           <img class="kjmlogo" src="./kjmlogo.png" alt="">
@@ -33,43 +35,53 @@
     </div>
     <div class="container-area">
       <div class="area">
-        <div class="sub-area">
+        <a class="sub-area" href="">
           <img src="n4.jpg"></img>
           <div class="area-green"></div>
           <span class="area-btn">N4 Pantai Damai</span>
-        </div>
-        <div class="sub-area">
+        </a>
+        <a class="sub-area" href="">
           <img src="n5.jpg"></img>
           <div class="area-green"></div>
           <span class="area-btn">N5 Demak Laut</span>
-        </div>
-        <div class="sub-area">
+        </a>
+        <a class="sub-area" href="">
           <img src="n6.jpg"></img>
           <div class="area-green"></div>
           <span class="area-btn">N6 Tupong</span>
-        </div>
-        <div class="sub-area">
+        </a>
+        <a class="sub-area" href="">
           <img src="n7.jpg"></img>
           <div class="area-green"></div>
           <span class="area-btn">N7 Samariang</span>
-        </div>
-        <div class="sub-area">
+        </a>
+        <a class="sub-area" href="">
           <img src="n8.jpg"></img>
           <div class="area-green"></div>
           <span class="area-btn">N8 Satok</span>
-        </div>
+        </a>
       </div>
     </div>
     <div class="container-activity">
       <img src="bg-activity.jpg">
       <div class="act-news">
         <div class="activity">
-          <h1 id="demo" >Aktiviti Kejiranan Pintar </h1>
-          <div class="activity-gallery"></div>
+          <h1 id="demo">Aktiviti Kejiranan Pintar </h1>
+          
+          <div class="container-gallery" >
+            <div class="activity-gallery" id="activity-gallery">
+              <div class="gallery-icon"><img src="./icon-kjm/icon1.png" alt=""></div>
+              <div class="gallery-icon"><img src="./icon-kjm/icon2.png" alt=""></div>
+              <div class="gallery-icon"><img src="./icon-kjm/icon3.png" alt=""></div>
+              <div class="gallery-icon"><img src="./icon-kjm/icon4.png" alt=""></div>
+              <div class="gallery-icon"><img src="./icon-kjm/icon5.png" alt=""></div>
+              <div class="gallery-icon"><img src="./icon-kjm/icon6.png" alt=""></div>
+            </div>
+          </div>
         </div>
         <div class="newsheading">Terkini</div>
         <div class="news">
-          <div class="sub-news">
+          <a class="sub-news" href="">
             <img src="news-sample.jpg" alt="">
             <div class="whitecard"></div>
             <div class="newstext">
@@ -77,8 +89,8 @@
               <div class="newsauthor">John Doe • 18/3/2022</div>
               <div class="newscaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan malesuada diam, quis mollis erat interdum sit amet. Aliquam mollis eu orci ut bibend... </div>
             </div>
-          </div>
-          <div class="sub-news">
+          </a>
+          <a class="sub-news" href="">
             <img src="news-sample.jpg" alt="">
             <div class="whitecard"></div>
             <div class="newstext">
@@ -86,8 +98,8 @@
               <div class="newsauthor">John Doe • 18/3/2022</div>
               <div class="newscaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan malesuada diam, quis mollis erat interdum sit amet. Aliquam mollis eu orci ut bibend... </div>
             </div>
-          </div>
-          <div class="sub-news">
+          </a>
+          <a class="sub-news" href="">
             <img src="news-sample.jpg" alt="">
             <div class="whitecard"></div>
             <div class="newstext">
@@ -95,7 +107,7 @@
               <div class="newsauthor">John Doe • 18/3/2022</div>
               <div class="newscaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan malesuada diam, quis mollis erat interdum sit amet. Aliquam mollis eu orci ut bibend... </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -127,12 +139,31 @@
       </div>
     </div>
     <div class="container-contact">
-      <h2>Hubungi Kami</h2>
+      <h1>Hubungi Kami</h1>
       <div class="box-contact">
-        <div class="sub-contact">LOKASI</div>
-        <div class="sub-contact">TELEFON DAN EMEL</div>
-        <div class="sub-contact">MASA OPERASI</div>
-        <div class="sub-contact">FOLLOW DAN SUBSCRIBE</div>
+        <div class="sub-contact">
+          <div class="contact-title">LOKASI</div>
+          <p>Dewan Bandaraya Kuching Utara, Bukit Siol, Jalan Semariang, Petra Jaya 93050 Kuching, Sarawak, Malaysia.</p>
+        </div>
+        <div class="sub-contact">
+          <div class="contact-title">TELEFON DAN EMEL</div>
+          <p>+6082512200 / +6082512201</p>
+          <p>aduandbku@dbku.gov.my</p>
+        </div>
+        <div class="sub-contact">
+          <div class="contact-title">MASA OPERASI</div>
+          <p>Isnin hingga Jumaat</p>
+          <p>9:00 pagi – 5:00 petang</p>
+        </div>
+        <div class="sub-contact">
+          <div class="contact-title">FOLLOW DAN SUBSCRIBE</div>
+          <div class="icon-box">
+            <a href="https://www.facebook.com/KJMDBKUMesra/"><img src="fb_icon.png" alt=""></a>
+            <a href="https://twitter.com/dbkumesra"><img src="twitter_icon.png" alt=""></a>
+            <a href="https://www.instagram.com/kejirananmesrakjm/"><img src="insta_icon.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCE5kAzxYiTvagYRBKUXm9ug"><img src="yt_icon.png" alt=""></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
