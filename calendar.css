@@ -9,7 +9,7 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-  background-color: #46e427;
+  background-color: #61CE70;
   color: white;
 }
 
@@ -23,14 +23,14 @@ dt {
 }
 
 th {
-	font-size: 17px;
+	font-size: 15px;
 	text-align: center;
 	height: 5px;
 	border: 2px solid #808080;
 }
 
 td {
-	font-size: 16px;
+	font-size: 13px;
 	border: 2px solid #808080;
 	vertical-align: top;
 }

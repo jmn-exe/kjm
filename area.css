@@ -8,8 +8,20 @@ body{
 .header{
     background-color: white;
 }
-.background-img{
+.n4-bg{
     background-image: url("./n4.jpg");
+}
+.n5-bg{
+    background-image: url("./n5.jpg");
+}
+.n6-bg{
+    background-image: url("./n6.jpg");
+}
+.n7-bg{
+    background-image: url("./n7.jpg");
+}
+.n8-bg{
+    background-image: url("./n8.jpg");
 }
 .kjmtext, .nav-link{
     color:black;
@@ -32,6 +44,10 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+.card-box ul a{
+    text-decoration: none;
+    color:rgb(27, 110, 189)
 }
 .area-card p{
     font-weight: 300;

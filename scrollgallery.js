@@ -1,5 +1,5 @@
 var iconCount = 1;
-var maxIcon = 6 - 3;
+var maxIcon = 12 - 3;
 function iconScroll(){
     var gallery = document.getElementById("activity-gallery").style;
     var translate = iconCount * (-150);
